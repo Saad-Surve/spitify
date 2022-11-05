@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+#genre {
+    width: 100%;
+    height: 100vh;
+}
+
+.container-select {
+    width: 100%;
+    height: 100vh;
+}
+
+.button {
+    border: none;
+
+    font-size: 3vw;
+}
+
+.heading {
+    height: 10%;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideDown 1s 1;
+}
+
+.options {
+    border-top: 2px black solid;
+    height: 90%;
+    background-image: url(../assets/optionsBackImg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 2px red solid; */
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input:checked+label {
+    transition: 0.6s ease-in-out;
+    border: 10px green solid;
+    color: green;
+}
+
+label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    border-radius: 30px;
+    border: 10px black solid;
+    cursor: inherit;
+}
+
+label span {
+    font-size: 2.5vw;
+}
+
+#right {
+    position: fixed;
+    right: 0;
+    width: 5vw;
+    height: 90vh;
+
+    cursor: pointer;
+    top: 10vh;
+}
+
+#left {
+    position: fixed;
+    width: 5vw;
+    height: 90vh;
+    top: 10vh;
+    left: 0;
+    cursor: pointer;
+}
+
+#container-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    /* border: 2px red solid; */
+    height: 80%;
+    margin: auto;
+}
+
+#page1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#page2 {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-section {
+    width: 25%;
+    display: flex;
+    height: 65%;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 30px;
+    animation: slideUp 1s 1;
+}
+#submit-genre{
+    width: 100%;
+    text-align: center;
+    height: 20%;
+}
+#submit-genre a{
+    cursor: pointer;
+    padding: 0.8vw;
+    background-color: aliceblue;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 2.5vw;
+    border: 4px black solid;
+}
+
+#submit-genre a:visited{
+    color: black;
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

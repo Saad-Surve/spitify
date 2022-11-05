@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPITify</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+ 
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<!-- <script src="../js/treedata.js"></script> -->
+<script src="../js/dll.js"></script>
+<script src="../js/tree.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="nav">
+            <div id="logo"><img src="../assets/logoinv.png" alt=""></div>
+            <div id="navbar">
+                <div class="nav-items">
+                    <i class="bi bi-house-door"></i>
+                    <div>&nbsp&nbspHome</div>
+                </div>
+                <div class="nav-items">
+                    <i class="bi bi-search"></i>
+                    <div>&nbsp&nbspSearch</div>
+                </div>
+                <div class="nav-items">
+                    <i class="bi bi-grid-3x3-gap"></i>
+                    <div>&nbsp&nbspYour Library</div>
+                </div>
+                <div class="nav-items">
+                    <i class="bi bi-heart-fill"></i>
+                    <div>&nbsp&nbspLiked Songs</div>
+                </div>
+                <div class="nav-items">
+                    <i class="bi bi-plus-square-fill"></i>
+                    <div>&nbsp&nbspCreate Playlist</div>
+                </div>
+            </div>
+        </section>
+        <section id="container-main">
+            <div id="playlists">
+                
+            </div>
+            <div id="allPlaylists">
+
+            </div>
+            <section id="music-player">
+            <button id="play" onclick="playpauseSong()">PLAY</button>
+            <input onclick = "updateSong()" type="range"  id="progressBar" min = "0" max = "100" value="0">
+            <button id="next" onclick="prevSong()">PREVIOUS</button>
+            <button id="next" onclick="nextSong()">NEXT</button></section>
+        </section>
+    </main>
+    <script src="../js/homepage.js"></script>
+</body>
+
+</html>
