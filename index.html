@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/choices.css">
     <title>SPITify</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <script src="js/choices.js"></script>
 </head>
+
 <body>
-    <section id="login">
-        <div id="container-login">
-            <div id="heading">Welcome</div>
-            <form>
-               <div class="input"><label for="email">Enter your email:</label>
-                <input type="email"></div>
-                <div class="input"><label for="password">Enter your password:</label>
-                <input type="password"></div>
-                <div id="signupdiv"><button id="signup"><a href="/html/choices.html">Sign up</a></button></div>
-            </form>
-            <div id="accLogin">Click here to Login</div>
+    <section id="genre">
+        <div class="container-select">
+            <div class="heading">
+                Choose Your Favorite Genres
+            </div>
+            <div class="options">
+                        <div id="container-options">
+
+                                <div class="content-section">
+                                    <input id="pop" type="checkbox" class="genre-value" value="1">
+                                    <label for="pop">
+                                        <span>Pop</span>
+
+                                    </label>
+                                </div>
+                                <div class="content-section">
+                                    <input id="rap" type="checkbox" class="genre-value" value="2">
+                                    <label for="rap">
+                                        <span>Rap</span>
+                                        
+                                    </label>
+                                </div>
+                                <div class="content-section">
+                                    <input id="edm" type="checkbox" class="genre-value" value="3">
+                                    <label for="edm">
+                                        <span>EDM</span>
+                                    </label>
+                                </div>
+                                <div class="content-section">
+                                    <input id="classical" type="checkbox" class="genre-value" value="5">
+                                    <label for="classical">
+                                        <span>Classical</span>
+                                    </label>
+                                </div>
+                            </div>
+                        <div id="submit-genre"><a onclick="userChoices()">Submit</a></div>
+            </div>
         </div>
     </section>
 </body>
-</html> 
+
+</html>
